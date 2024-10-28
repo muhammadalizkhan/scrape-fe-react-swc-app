@@ -1,0 +1,115 @@
+.reach-section {
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    padding: 80px 0;
+    width: 100%;
+  }
+  
+  .reach-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .reach-header {
+    margin-bottom: 60px;
+  }
+  
+  .reach-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .feature-card {
+    background: rgba(23, 23, 23, 0.95);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    pointer-events: none;
+  }
+  
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .feature-icon {
+    color: #fff;
+  }
+  
+  .feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .reach-header h1 {
+      font-size: 36px;
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .reach-section {
+      padding: 40px 0;
+    }
+    
+    .feature-card {
+      padding: 20px;
+    }
+  }
+  
+  /* Dark mode optimization */
+  @media (prefers-color-scheme: dark) {
+    .feature-card {
+      background: rgba(23, 23, 23, 0.95);
+    }
+  }
