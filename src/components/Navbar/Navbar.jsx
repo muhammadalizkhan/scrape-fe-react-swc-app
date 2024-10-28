@@ -8,8 +8,9 @@ const Navbar = () => {
           LeadKit
         </div>
         <div className="navbar-links">
-          <a href="#testimonials">Testimonials</a>
           <a href="#pricing">Pricing</a>
+          <a href="#features">Features</a>
+          <a href="#features">Services</a>
         </div>
         <div className="navbar-buttons">
           <button className="navbar-signin">Sign in</button>

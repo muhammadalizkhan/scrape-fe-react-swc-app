@@ -1,4 +1,5 @@
 import './Hero.css';
+import { ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -6,18 +7,17 @@ const Hero = () => {
       <div className="hero-content">
         <h1 className="hero-title">Scrape, Verify, Send.</h1>
         <p className="hero-subtitle">
-          The Unlimited suite of tools to grow your business and find
-          new millions of leads at scale, 10x faster.
+          The unlimited suite of tools to grow your business and find new millions of leads at scale, 10x faster.
         </p>
-        <button className="hero-button">Start For Free</button>
+        <button className="hero-button">
+          Start For Free <ChevronRight className="hero-icon" />
+        </button>
         
         <div className="hero-partners">
-          <p>As seen on:</p>
           <div className="hero-partner-logos">
-            <img src="/path/to/liveblocks-logo.png" alt="Liveblocks logo" />
-            <img src="/path/to/payload-logo.png" alt="Payload logo" />
-            <img src="/path/to/chatbase-logo.png" alt="Chatbase logo" />
-            <img src="/path/to/startups-logo.png" alt="Startups logo" />
+            <img src="src/assets/Images/logofour.png" alt="Chatbase" />
+            <img src="src/assets/Images/logofive.png" alt="Aplpin" />
+            <img src="src/assets/Images/logothree.png" alt="Opal" />
           </div>
         </div>
       </div>

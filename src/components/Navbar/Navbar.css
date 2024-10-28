@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 12px rgba(54, 21, 21, 0.15);
 }
 
 .navbar-container {
@@ -24,11 +24,13 @@
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .navbar-links {
   display: flex;
-  gap: 20px;
+  gap: 2.5rem;
+  text-align: center;
 }
 
 .navbar-links a {
@@ -47,43 +49,24 @@
   gap: 12px;
 }
 
-.navbar-signin {
-  background: none;
+.navbar-signin, 
+.navbar-getstarted {
   border: none;
-  color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
-  transition: color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-.navbar-signin:hover {
-  color: #b3b3b3;
+.navbar-signin {
+  background: transparent;
+  color: #ffffff;
 }
 
 .navbar-getstarted {
   background-color: #ffffff;
   color: #000000;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: 2px solid #ffffff;
 }
-
-.navbar-getstarted:hover {
-  background-color: #e0e0e0;
-}
-
-@media (max-width: 768px) {
-  .navbar-links {
-    display: none;
-
-  .navbar-buttons {
-    gap: 8px;
-  }
-
-  .navbar-container {
-    padding: 0 16px;
-  }
-}}
